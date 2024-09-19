@@ -71,3 +71,18 @@ function majorityElement(arr) {
   console.log(hasUniqueCharacters("hello")); // false
   console.log(hasUniqueCharacters("world")); // true
   
+  // firstNonRepeate
+
+  function firstNonRepeatedChar(str) {
+    const freq = {};
+    for (let char of str) {
+      freq[char] = (freq[char] || 0) + 1;
+    }
+    for (let char of str) {
+      if (freq[char] === 1) return char;
+    }
+    return null;
+  }
+  
+  console.log(firstNonRepeatedChar("swiss")); // "w"
+  
