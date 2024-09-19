@@ -56,3 +56,18 @@ function majorityElement(arr) {
   console.log(majorityElement(arr)); 
   
   
+
+  // Unique Character
+
+  function hasUniqueCharacters(str) {
+    const charSet = new Set();
+    for (let char of str) {
+      if (charSet.has(char)) return false;
+      charSet.add(char);
+    }
+    return true;
+  }
+  
+  console.log(hasUniqueCharacters("hello")); // false
+  console.log(hasUniqueCharacters("world")); // true
+  
