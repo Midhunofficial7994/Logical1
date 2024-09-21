@@ -16,7 +16,8 @@ function fizzBuzz() {
   fizzBuzz();
   
 
-  function longestUniqueSubstring(str) {
+ 
+    function longestUniqueSubstring(str) {
     let seen = new Map();
     let maxLength = 0;
     let start = 0;
@@ -34,4 +35,3 @@ function fizzBuzz() {
   
 
   console.log(longestUniqueSubstring("abcabcbb")); 
-  
