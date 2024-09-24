@@ -39,6 +39,6 @@ function smallestWindow(s, t) {
     return minWindow.length === 0 ? "" : minWindow;
   }
   
-  // Test
-  console.log(smallestWindow("ADOBECODEBANC", "ABC")); // Output: "BANC"
+
+  console.log(smallestWindow("ADOBECODEBANC", "ABC")); 
   
