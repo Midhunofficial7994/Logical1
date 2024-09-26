@@ -28,33 +28,44 @@
 
 // Roman to Int 
 
-function romanToInt(s) {
+// function romanToInt(s) {
     
-    const num = {
-        'I': 1,
-        'V': 5,
-        'X': 10,
-        'L': 50,
-        'C': 100,
-        'D': 500,
-        'M': 1000
-    };
+//     const num = {
+//         'I': 1,
+//         'V': 5,
+//         'X': 10,
+//         'L': 50,
+//         'C': 100,
+//         'D': 500,
+//         'M': 1000
+//     };
     
-    let total = 0;
+//     let total = 0;
     
   
-    for (let i = 0; i < s.length; i++) {
-        let currentVal = num[s[i]];
-        let nextVal = num[s[i + 1]];
+//     for (let i = 0; i < s.length; i++) {
+//         let currentVal = num[s[i]];
+//         let nextVal = num[s[i + 1]];
 
-        if (nextVal > currentVal) {
-            total -= currentVal;
-        } else {
-            total += currentVal;
-        }
-    }
+//         if (nextVal > currentVal) {
+//             total -= currentVal;
+//         } else {
+//             total += currentVal;
+//         }
+//     }
     
-    return total;
+//     return total;
+// }
+
+function isPalindrome(s) {
+   
+    let cleanedStr = s.toLowerCase().replace(/[^a-z0-9]/g, '');
+    
+
+    return cleanedStr === cleanedStr.split('').reverse().join('');
 }
+
+
+
 
 
