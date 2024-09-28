@@ -15,6 +15,18 @@ function Myfun(arr) {
       flat.concat(Array.isArray(toFlatten) ? Myfun(toFlatten) : toFlatten), []);
   }
   
-  console.log(Myfun([1, [2, [3, [4]], 5]])); 
+// ArrayWrapper
+
+  class ArrayWrapper {
+    constructor(nums) {
+      this.nums = nums;
+    }
+    valueOf() {
+      return this.nums.reduce((sum, num) => sum + num, 0);
+    }
+    toString() {
+      return `[${this.nums.join(",")}]`;
+    }
+  }
  
   
