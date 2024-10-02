@@ -42,3 +42,18 @@
 // function fourLetters(words) {
 //     return words.filter(word => word.length >= 4);
 //   }
+
+// Implementing a Function for the longest plaindrome string'
+
+function longestPalindrome(s) {
+    let longest = '';
+    for (let i = 0; i < s.length; i++) {
+        for (let j = i + 1; j <= s.length; j++) {
+            let substring = s.slice(i, j);
+            if (substring === substring.split('').reverse().join('') && substring.length > longest.length) {
+                longest = substring;
+            }
+        }
+    }
+    return longest;
+}
