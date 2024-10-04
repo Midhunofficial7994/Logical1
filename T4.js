@@ -1,7 +1,7 @@
 function isPalindrome(str) {
 
     const lowerStr = str.toLowerCase();
-  n
+  
     return lowerStr === lowerStr.split('').reverse().join('');
   }
   
