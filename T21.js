@@ -62,7 +62,7 @@ function longestPalindrome(s) {
 // Generating the Permutation
 
 function permute(str) {
-    if (str.length === 1) return [str];
+    if (str.length === 1) return [str];       
     let permutations = [];
     for (let i = 0; i < str.length; i++) {
         let char = str[i];

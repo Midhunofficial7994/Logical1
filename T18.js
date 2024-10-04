@@ -1,16 +1,16 @@
-// // let num = [1, 2, 0, 0];
-// // let k = 34;            
+// let num = [1, 2, 0, 0];
+// let k = 34;            
 
-// // let baseNumber = 0;
+// let baseNumber = 0;
 
 
-// // for (let i = 0; i < num.length; i++) {
-// //     baseNumber = baseNumber * 10 + num[i]; 
-// // }
+// for (let i = 0; i < num.length; i++) {
+//     baseNumber = baseNumber * 10 + num[i]; 
+// }
 
-// // let result = baseNumber + k
-// // let result1=String(result).split('').map(Number);
-// // console.log(result1)
+// let result = baseNumber + k
+// let result1=String(result).split('').map(Number);
+// console.log(result1)
 
 
 // function Myfun(str) {
@@ -28,42 +28,14 @@
 
 // Roman to Int 
 
-// function romanToInt(s) {
-    
-//     const num = {
-//         'I': 1,
-//         'V': 5,
-//         'X': 10,
-//         'L': 50,
-//         'C': 100,
-//         'D': 500,
-//         'M': 1000
-//     };
-    
-//     let total = 0;
-    
-  
-//     for (let i = 0; i < s.length; i++) {
-//         let currentVal = num[s[i]];
-//         let nextVal = num[s[i + 1]];
 
-//         if (nextVal > currentVal) {
-//             total -= currentVal;
-//         } else {
-//             total += currentVal;
-//         }
-//     }
-    
-//     return total;
-// }
-
-function isPalindrome(s) {
+// function isPalindrome(s) {
    
-    let cleanedStr = s.toLowerCase().replace(/[^a-z0-9]/g, '');
+//     let cleanedStr = s.toLowerCase().replace(/[^a-z0-9]/g, '');
     
 
-    return cleanedStr === cleanedStr.split('').reverse().join('');
-}
+//     return cleanedStr === cleanedStr.split('').reverse().join('');
+// }
 
 
 
