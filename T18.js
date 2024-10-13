@@ -40,4 +40,24 @@
 
 
 
-
+function permute(str, l = 0, r = str.length - 1) {
+    if (l === r) {
+      console.log(str);
+    } else {
+      for (let i = l; i <= r; i++) {
+        str = swap(str, l, i);
+        permute(str, l + 1, r);
+        str = swap(str, l, i); // backtrack
+      }
+    }
+  }
+  
+  function swap(s, i, j) {
+    let arr = s.split('');
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+    return arr.join('');
+  }
+  
+  // Example usage:
+  permute("abc");
+  
