@@ -30,3 +30,16 @@ fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
   .catch(error => {
     console.error('There was a problem with the fetch operation:', error);
   });
+
+
+ 
+Array.prototype.last = function() {
+  return this.length > 0 ? this[this.length - 1] : -1;
+};
+
+
+let nums = JSON.parse('[null, {}, 3]');
+console.log(nums.last()); 
+
+let emptyArray = JSON.parse('[]');
+console.log(emptyArray.last()); 
