@@ -38,8 +38,22 @@ Array.prototype.last = function() {
 };
 
 
+
+
+
 let nums = JSON.parse('[null, {}, 3]');
 console.log(nums.last()); 
 
 let emptyArray = JSON.parse('[]');
 console.log(emptyArray.last()); 
+
+
+
+// Includes Method 
+
+
+const mainString = "The quick brown fox jumps over the lazy dog";
+const searchString = "fox";
+
+const contains = mainString.includes(searchString);
+console.log(contains); 
