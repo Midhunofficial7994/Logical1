@@ -116,6 +116,30 @@ console.log(Myfun("MI"));
 // console.log(clonedObj); 
 
 
+// First Non- Repeating string 
+
+function firstNonRepeated(str) {
+    const charCount = {};
+
+    for (let char of str) {
+        charCount[char] = (charCount[char] || 0) + 1;
+    }
+
+
+    for (let char of str) {
+        if (charCount[char] === 1) {
+            return char;
+        }
+    }
+
+    return null;
+}
+
+console.log(firstNonRepeated("abacabad")); 
+console.log(firstNonRepeated("aabbcc"));   
+
+
+
 
     </script>
 </body>
