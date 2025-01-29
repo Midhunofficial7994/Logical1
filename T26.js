@@ -61,5 +61,5 @@ var addBinary = function(a, b) {
     }
 
 
-    return result;
+    return result ;
 };
